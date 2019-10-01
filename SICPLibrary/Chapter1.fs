@@ -59,4 +59,11 @@ module Exponentiation =
 
             if n = 0 then 1
             else
-                exp 1 b 1 n 
+                exp 1 b 1 n
+
+
+    module Exercise_1_17 =
+
+        let rec (*) a b =
+            if b = 0 then 0
+            else a + ((*) a (b - 1)) 

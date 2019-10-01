@@ -23,3 +23,7 @@ module Exercise_1_13Tests =
     let ``fib returns expected and equals interpolation`` n res =
         Assert.That( Exercise_1_13.fib n, Is.EqualTo( res ) )
         Assert.That( Exercise_1_13.fib n, Is.EqualTo( int (Exercise_1_13.``fib-interpolation-low`` n) ) )
+
+    [<TestCase(7, 8, 56)>]
+    let ``(*) returns expected`` a b res =
+        Assert.That( Exponentiation.Exercise_1_17.(*) a b, Is.EqualTo( res ) )
