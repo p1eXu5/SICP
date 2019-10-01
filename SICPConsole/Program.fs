@@ -16,4 +16,9 @@ let main argv =
     printfn "high(%d) = %f" n (Exercise_1_13.``fib-interpolation-high`` n)
     printfn "low(%d) = %f" n (Exercise_1_13.``fib-interpolation-low`` n)
 
+    let b = 4
+    let e = 6
+    printfn "Fast exp %d %d = %d" b e (Exponentiation.fastExpt b e)
+    printfn "Fast exp %d %d = %d" b e (Exponentiation.Exercise_1_16.fastExpIter b e)
+
     0 // return an integer exit code
